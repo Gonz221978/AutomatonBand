@@ -119,6 +119,40 @@ div ul{
     color: #7f8c8d; /* Grayish-blue text color */
 }
 
+
+table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #b22323;
+}
+th {
+    background-color: #111;
+    color: #ffffff;
+}
+td {
+    background-color: #111;
+}
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+.album-cover {
+    width: 100px;
+}
+
+div tr{
+    font-size: 18px; /* 16px is the default font size */
+    color: #ffffff; /* Grayish-blue */
+    margin-bottom: 12px; /* Adding some space below the paragraph */
+    font-family: Roboto;
+    margin: 20px;
+}
+
 /* Specific styling using an ID */
 #special-feature{
     background-color: #fde3a7; /* Light gold background color */
@@ -156,7 +190,20 @@ button:hover{
     background-color: red; /* Red background color */
 }
 
-
+a:hover {
+    text-decoration: underline;
+}
+.buy-button {
+    background-color: #b22323;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buy-button:hover {
+    background-color: #b22323;
+}
 
 html, body {
     padding: 0;
