@@ -4,6 +4,12 @@
     font-family: 'Just Me Again Down Here';
     src: url(font/JustMeAgainDownHere-Regular.ttf);
 }
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(font/Roboto-Thin.ttf);
+}
+
 .external-css{
     color: #ffffff; /* Teal text color */
     background-color: #000000; /* Dark teal background color */
@@ -51,15 +57,22 @@ h1{
 }
 
 h2{
+    font-size: 1.8em; /* 1.5x the default font size */
+    color: #ffffff; /* Dark teal text color */
+}
+
+h3{
     font-size: 1.5em; /* 1.5x the default font size */
     color: #ffffff; /* Dark teal text color */
 }
 
 /* Styling the paragraph */
 p{
-    font-size: 16px; /* 16px is the default font size */
+    font-size: 18px; /* 16px is the default font size */
     color: #ffffff; /* Grayish-blue */
     margin-bottom: 12px; /* Adding some space below the paragraph */
+    font-family: Roboto;
+    margin: 20px;
 }
 
 /* Styling the link within the paragraph */
@@ -159,4 +172,8 @@ body {
     background: rgb(0, 0, 0);
     width: 400px; /* adjust this to the proper width */
     margin: 0 auto;
+}
+
+img[src=images/whiteshirt.png]{
+    style: width="20%"
 }
