@@ -295,3 +295,34 @@ input[type="submit"]:hover {
 .link-item a:hover {
     background-color: #892222;
 }
+
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #e74c3c;
+}
+input[type="text"], input[type="email"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #111;
+    border-radius: 5px;
+    background-color: #111;
+    color: #fff;
+}
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+input[type="submit"] {
+    background-color: #b22323;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+input[type="submit"]:hover {
+    background-color: #892222;
+}
