@@ -90,7 +90,7 @@ ul{
 
 ul li{
     margin-bottom: 5px; /*Adding some space below each list item */
-    color: #7f8c8d; /* Grayish-blue text color */
+    color: #892222; /* Grayish-blue text color */
 }
 
 /* Styling the unordered list within a div */
@@ -100,23 +100,23 @@ div ul{
 
 /* General styling using a class */
 .feature-card {
-    border: 2px solid #7f8c8d; /* Grayish-blue */
+    border: 2px solid #892222; /* Grayish-blue */
     padding: 20px; /* Adding some space inside the card */
     margin: 20px; /* Adding some space outside the card */
-    background-color: #f9f9f9; /* Light gray */
+    background-color: #ffffff; /* Light gray */
 }
 
 /* Styling h3 within a class */
 .feature-card h3{
     font-size: 20px; /* 20px is the default font size */
     margin-bottom: 10px; /*  */
-    color: #2c3e50; /* Deep blue text color */
+    color: #892222; /* Deep blue text color */
 }
 
 /* Styling p within a class */
 .feature-card p{
     margin-bottom: 10px; /* Adding some space below the paragraph */
-    color: #7f8c8d; /* Grayish-blue text color */
+    color: #892222; /* Grayish-blue text color */
 }
 
 
@@ -155,7 +155,7 @@ div tr{
 
 /* Specific styling using an ID */
 #special-feature{
-    background-color: #fde3a7; /* Light gold background color */
+    background-color: #fffbed; /* Light gold background color */
     border-color: #f39c12; /* Gold border color */
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1); /* Adding a shadow */
 }
@@ -180,14 +180,14 @@ a:hover{
 button{
     padding: 0px 0px; /* Adding some space inside the button */
     border: none; /* Removing the border */
-    background-color: #ecf0f1; /* Light gray background color */
+    background-color: #ffffff; /* Light gray background color */
     cursor: pointer; /* Changing the cursor to a pointer */
     transition: all 0.3s ease; /* Adding a transition */
 }
 
 /* Conditional Styling fot the hover state */
 button:hover{
-    background-color: red; /* Red background color */
+    background-color: #b22323; /* Red background color */
 }
 
 a:hover {
@@ -228,4 +228,48 @@ img[src=images/whiteshirt.png]{
 small{
     color: #ffffff;
     font-size: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin: 10px 0 5px;
+    color: #b22323;
+    font-size: 20px;
+}
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #111;
+    border-radius: 5px;
+    background-color: #111;
+    color: #fff;
+}
+input[type="submit"] {
+    background-color: #b22323;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: #b22323;
+}
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+}
+.contact-info p, .contact-info a {
+    color: #ffffff;
+    margin: 5px 0;
+}
+.contact-info a {
+    color: #b22323;
+    text-decoration: none;
+}
+.contact-info a:hover {
+    text-decoration: underline;
 }
