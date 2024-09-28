@@ -224,3 +224,8 @@ body {
 img[src=images/whiteshirt.png]{
     style: width="20%"
 }
+
+small{
+    color: #ffffff;
+    font-size: 15px;
+}
