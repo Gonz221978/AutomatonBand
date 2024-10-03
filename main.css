@@ -303,7 +303,7 @@ label {
     color: #e74c3c;
 }
 input[type="text"], input[type="email"], textarea, select {
-    width: 100%;
+    width: auto;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #111;
@@ -325,4 +325,7 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
     background-color: #892222;
+}
+
+textarea{ width: auto;
 }
