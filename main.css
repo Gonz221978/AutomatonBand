@@ -1,5 +1,4 @@
-/* Note: CSS are applied from top to bottom. Last rule wins. #/
-/* Method 1: External CSS Part 3 */
+
 @font-face {
     font-family: 'Just Me Again Down Here';
     src: url(font/JustMeAgainDownHere-Regular.ttf);
@@ -10,322 +9,273 @@
     src: url(font/Roboto-Thin.ttf);
 }
 
-.external-css{
-    color: #ffffff; /* Teal text color */
-    background-color: #000000; /* Dark teal background color */
+/* Global Resetting Styles */
+html, body, h1, h2, p, ul, li, a {
+    margin: 0; /* Removing default margin */
+    padding: 0; /* Removing default padding */
+    font-family: 'Just Me Again Down Here', sans-serif; /* Setting default font */
 }
 
-/* Resetting some default styles using multiple selectors separated by commas */
-body, h1, h2, p, ul, lu, a{
-    margin: 0; /* Removing the default margin */
-    padding: 0; /* Removing the default padding */
-    font-family: Just Me Again Down Here; /* Setting the default font */
+/* Body and Background */
+body {
+    background-color: #000000; /* Dark background color */
+    background: url(images/il_fullxfull.3220379112_2ol3.jpg) no-repeat center center fixed; /* Background image */
+    color: #ffffff; /* Default text color */
+    text-align: center; /* Center text alignment */
 }
 
-.Container{
-    position: relative;
-    text-align: center;
-    color: #000000;
+/* Container Styles */
+.container {
+    background: rgb(0, 0, 0);
+    width: 400px; /* Adjust width */
+    margin: 0 auto; /* Center container */
 }
 
+/* Header Styles */
+h1 {
+    color: #ffffff; /* White text color */
+    font-size: 2em; /* 2x the default font size */
+    margin-bottom: 1em; /* Space below heading */
+}
 
+h2, h3 {
+    color: #ffffff; /* White text color */
+}
+
+h2 {
+    font-size: 1.8em; /* 1.5x the default font size */
+}
+
+h3 {
+    font-size: 1.5em; /* 1.5x the default font size */
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 18px; /* Default font size */
+    color: #ffffff; /* White text color */
+    margin: 20px 20px; /* Space around paragraphs */
+    font-family: 'Roboto', sans-serif; /* Roboto font for paragraphs */
+}
+
+/* Link Styles */
 a {
-    font-size: 24px;
-
+    display: inline-block; /* Making the link a block element */
+    color: #ffffff; /* Gold accent color */
+    text-decoration: none; /* Removing underline */
+    font-size: 24px; /* Default link font size */
+    transition: all 0.3s ease; /* Adding a transition */
+    margin: 10px 10px;
 }
 
 a[href="index.html"] {
-    font-size: 44px;
-}
-
-img{display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-    width: 75%;
-}
-
-/* HTML element selector */
-body{
-    background-color: #000000; /*Dark teal body background color */
-}
-
-h1{
-    color: #ffffff; /* Teal text colors*/
-    font-size: 2em; /* 2x the default font size */
-    margin-bottom: 1em; /* Adding some space below the heading */
-}
-
-h2{
-    font-size: 1.8em; /* 1.5x the default font size */
-    color: #ffffff; /* Dark teal text color */
-}
-
-h3{
-    font-size: 1.5em; /* 1.5x the default font size */
-    color: #ffffff; /* Dark teal text color */
-}
-
-/* Styling the paragraph */
-p{
-    font-size: 18px; /* 16px is the default font size */
-    color: #ffffff; /* Grayish-blue */
-    margin-bottom: 12px; /* Adding some space below the paragraph */
-    font-family: Roboto;
-    margin: 20px;
-}
-
-/* Styling the link within the paragraph */
-p a{
-    color: #ffcb12; /* Gold accent */
-    text-decoration: none; /* Removing the underline */
-}
-
-/* Styling the unordered list */
-ul{
-    list-style-type: none; /* Removing the bullet points */
-    margin-left: 20px; /* Indenting the list */
-    margin-bottom: 12px; /* Adding some space below the list */
-}
-
-ul li{
-    margin-bottom: 5px; /*Adding some space below each list item */
-    color: #892222; /* Grayish-blue text color */
-}
-
-/* Styling the unordered list within a div */
-div ul{
-    list-style-type: square; /* Adding the bullet points back */
-}
-
-/* General styling using a class */
-.feature-card {
-    border: 2px solid #892222; /* Grayish-blue */
-    padding: 20px; /* Adding some space inside the card */
-    margin: 20px; /* Adding some space outside the card */
-    background-color: #ffffff; /* Light gray */
-}
-
-/* Styling h3 within a class */
-.feature-card h3{
-    font-size: 20px; /* 20px is the default font size */
-    margin-bottom: 10px; /*  */
-    color: #892222; /* Deep blue text color */
-}
-
-/* Styling p within a class */
-.feature-card p{
-    margin-bottom: 10px; /* Adding some space below the paragraph */
-    color: #892222; /* Grayish-blue text color */
-}
-
-
-table {
-    width: 100%;
-    margin: 20px auto;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 15px;
-    text-align: center;
-    border-bottom: 2px solid #b22323;
-}
-th {
-    background-color: #111;
-    color: #ffffff;
-}
-td {
-    background-color: #111;
-}
-audio {
-    width: 100%;
-    margin-top: 10px;
-}
-.album-cover {
-    width: 100px;
-}
-
-div tr{
-    font-size: 18px; /* 16px is the default font size */
-    color: #ffffff; /* Grayish-blue */
-    margin-bottom: 12px; /* Adding some space below the paragraph */
-    font-family: Roboto;
-    margin: 20px;
-}
-
-/* Specific styling using an ID */
-#special-feature{
-    background-color: #fffbed; /* Light gold background color */
-    border-color: #f39c12; /* Gold border color */
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1); /* Adding a shadow */
-}
-
-/* Styling the link in its normal state */
-a{
-    display: inline-block; /* Making the link a block element */
-    color: #ffffff; /* Bright blue text color */
-    text-decoration: none; /* Removing the underline */
-    padding: 5px 10px; /* Adding some space inside the link */
-    border: 0px solid #000000; /* Bright blue border color */
-    transition: all 0.3s ease; /* Adding a transition */
-}
-
-/* Conditional styling for the hover state */
-a:hover{
-    background-color: #000000; /* Bright blue background color */
-    color: white; /* White text color */
-}
-
-/* Styling the button */
-button{
-    padding: 0px 0px; /* Adding some space inside the button */
-    border: none; /* Removing the border */
-    background-color: #ffffff; /* Light gray background color */
-    cursor: pointer; /* Changing the cursor to a pointer */
-    transition: all 0.3s ease; /* Adding a transition */
-}
-
-/* Conditional Styling fot the hover state */
-button:hover{
-    background-color: #b22323; /* Red background color */
+    font-size: 44px; /* Larger font for specific link */
+    margin: 10px 15px;
 }
 
 a:hover {
-    text-decoration: underline;
-}
-.buy-button {
-    background-color: #b22323;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.buy-button:hover {
-    background-color: #b22323;
-}
- 
-html, body {
-    padding: 0;
-    margin: 0;
+    background-color: #00000000; /* Background color on hover */
+    color: white; /* Text color on hover */
+    text-decoration: underline; /* Underline on hover */
 }
 
-body {
-    background: url(images/il_fullxfull.3220379112_2ol3.jpg);
-    position:relative; text-align: center;
+/* Image Styles */
+img {
+    display: block; /* Block display */
+    margin: 0 auto; /* Center image */
+    width: 75%; /* Width for images */
+    height: auto; /* Maintain aspect ratio */
 }
 
-.container {
-    background: rgb(0, 0, 0);
-    width: 400px; /* adjust this to the proper width */
-    margin: 0 auto;
+/* List Styles */
+ul {
+    list-style-type: none; /* Removing bullet points */
+    margin: 20px 0; /* Space around lists */
+    padding-left: 20px; /* Indent lists */
 }
 
-small{
-    color: #ffffff;
-    font-size: 15px;
+ul li {
+    margin-bottom: 5px; /* Space below each list item */
+    color: #892222; /* Grayish-blue text color */
 }
 
+/* Feature Card Styles */
+.feature-card {
+    border: 2px solid #892222; /* Border color */
+    padding: 20px; /* Padding inside card */
+    margin: 20px; /* Margin outside card */
+    background-color: #ffffff; /* Light gray background */
+}
+
+.feature-card h3 {
+    font-size: 20px; /* Header font size */
+    margin-bottom: 10px; /* Space below header */
+    color: #892222; /* Deep red text color */
+}
+
+.feature-card p {
+    margin-bottom: 10px; /* Space below paragraph */
+    color: #892222; /* Grayish-blue text color */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full width */
+    margin: 20px auto; /* Center table */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+th, td {
+    padding: 15px; /* Padding for cells */
+    text-align: center; /* Centered text */
+    border-bottom: 2px solid #b22323; /* Bottom border for table cells */
+}
+
+th {
+    background-color: #111; /* Header background */
+    color: #ffffff; /* Header text color */
+}
+
+td {
+    background-color: #111; /* Data cell background */
+    color: #ffffff; /* Data cell text color */
+}
+
+/* Audio and Album Cover Styles */
+audio {
+    width: 100%; /* Full width for audio */
+    margin-top: 10px; /* Space above audio player */
+}
+
+.album-cover {
+    width: 100px; /* Width for album cover */
+}
+
+/* Special Feature Styles */
+#special-feature {
+    background-color: #fffbed; /* Light gold background */
+    border-color: #f39c12; /* Gold border color */
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0); /* Adding a shadow */
+}
+
+/* Button Styles */
+button {
+    padding: 10px; /* Padding for buttons */
+    border: none; /* Removing border */
+    background-color: #ffffff; /* Light gray background */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition effects */
+}
+
+button:hover {
+    background-color: #b22323; /* Red background on hover */
+}
+
+/* Form Styles */
 form {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Column layout */
 }
+
 label {
-    margin: 10px 0 5px;
-    color: #b22323;
-    font-size: 20px;
+    margin: 10px 0 5px; /* Space around labels */
+    color: #b22323; /* Red label color */
+    font-size: 20px; /* Label font size */
 }
+
 input, textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #111;
-    border-radius: 5px;
-    background-color: #111;
-    color: #fff;
+    padding: 10px; /* Padding for inputs */
+    margin-bottom: 20px; /* Space below inputs */
+    border: 1px solid #111; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #111; /* Input background */
+    color: #ffffff; /* Input text color */
 }
+
 input[type="submit"] {
-    background-color: #b22323;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    transition: background-color 0.3s ease;
+    background-color: #b22323; /* Submit button color */
+    color: #ffffff; /* Submit button text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    padding: 10px; /* Padding */
+    transition: background-color 0.3s ease; /* Transition on hover */
 }
+
 input[type="submit"]:hover {
-    background-color: #b22323;
+    background-color: #892222; /* Darker red on hover */
 }
+
+/* Contact Info Styles */
 .contact-info {
-    text-align: center;
-    margin-top: 20px;
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Space above contact info */
 }
+
 .contact-info p, .contact-info a {
-    color: #ffffff;
-    margin: 5px 0;
+    color: #ffffff; /* White text color */
+    margin: 5px 0; /* Space between items */
 }
+
 .contact-info a {
-    color: #b22323;
-    text-decoration: none;
+    color: #b22323; /* Contact link color */
+    text-decoration: none; /* No underline */
 }
+
 .contact-info a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover */
 }
 
-
+/* Links Container Styles */
 .links-container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #111;
-    border-radius: 8px;
-    border: 2px solid #111;
-    text-align: center;
+    max-width: 600px; /* Maximum width */
+    margin: 20px auto; /* Center container */
+    padding: 20px; /* Padding */
+    background-color: #11111100; /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #11111100; /* Border */
+    text-align: center; /* Center text */
 }
+
 .link-item {
-    margin: 15px 0;
+    margin: 15px 0; /* Space between link items */
 }
+
 .link-item a {
-    display: block;
-    background-color: #b22323;
-    color: #fff;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    display: block; /* Block links */
+    background-color: #b22323; /* Link background */
+    color: #ffffff; /* Link text color */
+    padding: 10px; /* Padding for links */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Transition */
 }
+
 .link-item a:hover {
-    background-color: #892222;
+    background-color: #892222; /* Darker background on hover */
 }
 
-
-label {
-    display: block;
-    margin: 10px 0 5px;
-    color: #e74c3c;
-}
-input[type="text"], input[type="email"], textarea, select {
-    width: auto;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #111;
-    border-radius: 5px;
-    background-color: #111;
-    color: #fff;
-}
-input[type="radio"], input[type="checkbox"] {
-    margin-right: 10px;
-}
-input[type="submit"] {
-    background-color: #b22323;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    width: 100%;
-    transition: background-color 0.3s;
-}
-input[type="submit"]:hover {
-    background-color: #892222;
+/* Small Text Styles */
+small {
+    color: #ffffff; /* White small text color */
+    font-size: 15px; /* Font size for small text */
 }
 
-textarea{ width: auto;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Responsive container width */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Smaller heading font size on mobile */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Smaller subtitle font size on mobile */
+    }
+
+    /* Adjust gallery item size on mobile */
+    .gallery-item {
+        flex: 0 0 100%; /* Full width for gallery items */
+    }
 }
